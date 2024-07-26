@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/7Alexandra8/JS--/tree/main/users-table/static/css/main.e6c13ad2.css",
+    "main.js": "/7Alexandra8/JS--/tree/main/users-table/static/js/main.66fa9a1c.js",
+    "static/js/453.35fcc69e.chunk.js": "/7Alexandra8/JS--/tree/main/users-table/static/js/453.35fcc69e.chunk.js",
+    "index.html": "/7Alexandra8/JS--/tree/main/users-table/index.html",
+    "main.e6c13ad2.css.map": "/7Alexandra8/JS--/tree/main/users-table/static/css/main.e6c13ad2.css.map",
+    "main.66fa9a1c.js.map": "/7Alexandra8/JS--/tree/main/users-table/static/js/main.66fa9a1c.js.map",
+    "453.35fcc69e.chunk.js.map": "/7Alexandra8/JS--/tree/main/users-table/static/js/453.35fcc69e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.66fa9a1c.js"
+  ]
+}
