@@ -7,7 +7,7 @@ const Th = styled.th`
   background: #f4f4f4;
   border-bottom: 1px solid #ddd;
   min-width: 50px;
-  position: relative; /* Для позиционирования перетаскивателя */
+  position: relative; 
 
   &:hover {
     background: #e9e9e9;
@@ -50,7 +50,7 @@ const UserTableHeader = ({ onSort, sortConfig }) => {
 
         const handleMouseMove = (moveEvent) => {
             const newWidth = startWidth + (moveEvent.clientX - startX);
-            thRefs.current[index].style.width = `${Math.max(newWidth, 50)}px`; // Минимальная ширина 50px
+            thRefs.current[index].style.width = `${Math.max(newWidth, 50)}px`;
         };
 
         const handleMouseUp = () => {
