@@ -48,23 +48,23 @@ const App = () => {
         }
     };
 
-    const handleSort = (field) => {
+    const handleSort = (key) => {
         let direction = 'ascending';
-        if (sortConfig && sortConfig.key === field && sortConfig.direction === 'ascending') {
+        if (sortConfig && sortConfig.key === key && sortConfig.direction === 'ascending') {
             direction = 'descending';
         }
 
         const sortedUsers = [...users].sort((a, b) => {
-            if (a[field] < b[field]) {
+            if (a[key] < b[key]) {
                 return direction === 'ascending' ? -1 : 1;
             }
-            if (a[field] > b[field]) {
+            if (a[key] > b[key]) {
                 return direction === 'ascending' ? 1 : -1;
             }
             return 0;
         });
 
-        setSortConfig({ key: field, direction });
+        setSortConfig({ key, direction });
         setUsers(sortedUsers);
     };
 
@@ -80,7 +80,7 @@ const App = () => {
         <AppWrapper>
             <GlobalStyle />
             <SearchInput onSearch={handleSearch} />
-            <UserTable users={users} onSort={handleSort} onRowClick={handleRowClick} />
+            <UserTable users={users} onSort={handleSort} sortConfig={sortConfig} onRowClick={handleRowClick} />
             <UserModal user={selectedUser} isOpen={!!selectedUser} onClose={handleCloseModal} />
         </AppWrapper>
     );
